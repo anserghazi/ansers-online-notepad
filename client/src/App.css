@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Raleway&display=swap');
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  
+}
+
+.sidebar {
+  order: 1;
+  background-color: rgb(35, 35, 37);
+  align-items: stretch;
+  width: 30%;
+}
+
+.sidebar > * {
+  margin: 15px 30px -10px 10px;
+}
+
+h1 {
+  color: rgb(240, 221, 196);
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  margin-left: 15px;
+}
+
+.titleInput {
+  width: 99.5%;
+  height: 40px;
+  outline: none;
+  font-size: larger;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 12px;
+}
+
+.bodyInput {
+  width: 100%;
+  resize: none;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+  border-radius: 12px;
+}
+
+.submit {
+  width: 101.5%;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(150, 130, 238);
+  color: white;
+  border-style: none;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.7s;
+}
+
+
+
+.submit:hover {
+  color: black;
+  letter-spacing: 3px;
+  background-color: white;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: rgb(5, 42, 255);
+}
+
+.postArea {
+  flex: 2;
+  order: 2;
+  background-color: rgb(58, 63, 77);
+  align-items: stretch;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+.blogPost {
+  margin-left: 30px;
+  margin-top: 25px;
+  padding-bottom: 30px;
+  margin-right: 40px;
+  padding-right: 15px;
+  border-radius: 12px;
+  background-color: rgb(240, 221, 196);
+  transition: 0.5s;
+}
+
+.blogPost > * {
+  font-family: 'Raleway', sans-serif;
+  margin-left: 15px;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: -1px;
+  padding-top: 10px;
+}
+
+.date {
+  height: 0;
+  display: block;
+  float: right;
+  color: rgb(197, 113, 4);
+  transition: 0.5s;
+  margin-top: -35px;
+}
+
+.editIcon {
+  float: right;
+  margin-right: 10px;
+  opacity: 0;
+  color: rgba(61, 70, 116, 0.904);
+  transition: 0.5s;
+}
+
+.editIcon:hover {
+  color: rgba(133, 110, 233, 0.904);
+}
+
+.copyIcon:hover {
+  color: rgba(133, 110, 233, 0.904);
+}
+
+.trashIcon:hover {
+  color: rgba(133, 110, 233, 0.904);
+}
+
+.trashIcon {
+  float: right;
+  margin-right: 10px;
+  opacity: 0;
+  color: rgba(61, 70, 116, 0.904);
+  transition: 0.5s;
+}
+
+.copyIcon {
+  float: right;
+  margin-right: 10px;
+  opacity: 0;
+  color: rgba(61, 70, 116, 0.904);
+  transition: 0.5s;
+}
+
+.blogPost:hover {
+  background-color: rgb(243, 206, 158);
+  transition: 0.25s;
+  padding-bottom: 35px;
+}
+
+.blogPost:hover .editIcon  {
+  opacity: 1;
+  transition: 0.25s;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+.blogPost:hover .trashIcon  {
+  opacity: 1;
+  transition: 0.25s;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+.blogPost:hover .copyIcon  {
+  opacity: 1;
+  transition: 0.25s;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+
+
+@media only screen and (max-width: 1550px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
