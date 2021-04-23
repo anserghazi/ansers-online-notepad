@@ -85,8 +85,9 @@ class App extends React.Component {
       return null;
     };
 
+    var reverse = posts.slice().reverse();
 
-    return posts.map((post) => {
+    return reverse.map((post) => {
       return <div className="blogPost">
               <div key={post._id}>
                 <h2 className="postTitle">{post.title}</h2>
