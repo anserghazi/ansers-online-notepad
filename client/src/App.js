@@ -169,7 +169,7 @@ class App extends React.Component {
     return(
       <div className="app">
         <div className="sidebar">
-          <a href="_blank" className="titleRefresh" style={{ textDecoration: 'none' }}>
+          <a href="." className="titleRefresh" style={{ textDecoration: 'none' }}>
             <h1>Anser's Online Notepad</h1>
           </a>
           <form onSubmit={this.submit}>
